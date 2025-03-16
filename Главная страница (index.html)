@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sundis Life - Натуральные соки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sundis Life - Натуральная энергия жизни</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="shop.html">Каталог</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="hero.jpg" alt="Sundis Life соки">
+        <p>Открой для себя мир яркого вкуса и натуральной пользы с соками Sundis Life!</p>
+        <a href="shop.html" class="btn">Перейти в каталог</a>
+    </section>
+
+    <footer>
+        <p>© 2025 Sundis Life. Все права защищены.</p>
+    </footer>
+</body>
+</html>
