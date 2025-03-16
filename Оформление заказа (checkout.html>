@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Оформление заказа</h1>
+    </header>
+
+    <section class="checkout">
+        <form>
+            <label>Ваше имя:</label>
+            <input type="text" required>
+            
+            <label>Телефон:</label>
+            <input type="tel" required>
+
+            <label>Адрес доставки:</label>
+            <input type="text" required>
+
+            <button type="submit">Отправить заказ</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Sundis Life</p>
+    </footer>
+</body>
+</html>
