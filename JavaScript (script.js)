@@ -1,0 +1,37 @@
+let cart = [];
+
+function addToCart(name, price) {
+    cart.push({ name, price });
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(name + " добавлен в корзину!");
+}
+
+function loadCart() {
+    cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let cartItems = document.getElementById("cart-items");
+    let totalPrice = 0;
+    
+    cartItems.innerHTML = "";
+    cart.forEach((item, index) => {
+        totalPrice += item.price;
+        cartItems.innerHTML += `<li>${item.name} - ${item.price}₸ <button onclick="removeItem(${index})">X</button></li>`;
+    });
+
+    document.getElementById("total-price").innerText = totalPrice;
+}
+
+function removeItem(index) {
+    cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    loadCart();
+}
+
+function clearCart() {
+    cart = [];
+    localStorage.setItem("cart", JSON.stringify(cart));
+    loadCart();
+}
+
+if (document.getElementById("cart-items")) {
+    loadCart();
+}
