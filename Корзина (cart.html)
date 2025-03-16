@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Корзина</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="shop.html">Каталог</a>
+        </nav>
+    </header>
+
+    <section class="cart">
+        <h2>Ваш заказ</h2>
+        <ul id="cart-items"></ul>
+        <p><strong>Общая сумма: <span id="total-price">0</span>₸</strong></p>
+        <button onclick="clearCart()">Очистить корзину</button>
+        <a href="checkout.html" class="btn">Оформить заказ</a>
+    </section>
+
+    <footer>
+        <p>© 2025 Sundis Life</p>
+    </footer>
+</body>
+</html>
