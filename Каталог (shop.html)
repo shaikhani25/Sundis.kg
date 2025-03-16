@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Sundis Life</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Каталог соков</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="shop.html">Каталог</a>
+        </nav>
+    </header>
+
+    <section class="products">
+        <div class="product">
+            <img src="orange.jpg" alt="Апельсиновый сок">
+            <h2>Апельсиновый сок</h2>
+            <p>100% натуральный сок</p>
+            <span>Цена: 500₸</span>
+            <button onclick="addToCart('Апельсиновый сок', 500)">Добавить в корзину</button>
+        </div>
+
+        <div class="product">
+            <img src="mango.jpg" alt="Манговый сок">
+            <h2>Манговый сок</h2>
+            <p>Насыщенный вкус манго</p>
+            <span>Цена: 600₸</span>
+            <button onclick="addToCart('Манговый сок', 600)">Добавить в корзину</button>
+        </div>
+    </section>
+
+    <a href="cart.html" class="btn">Перейти в корзину</a>
+
+    <footer>
+        <p>© 2025 Sundis Life</p>
+    </footer>
+</body>
+</html>
